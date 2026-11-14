@@ -32,7 +32,7 @@ header.site {
   display: flex; align-items: center; justify-content: space-between; gap: 12px;
   padding: 18px 0;
 }
-header.site .brand { font-weight: 900; font-size: 20px; color: var(--ink); text-decoration: none; letter-spacing: 0.2px; }
+header.site .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 900; font-size: 20px; color: var(--ink); text-decoration: none; letter-spacing: 0.2px; }
 header.site nav a { margin-left: 18px; text-decoration: none; color: var(--ink); font-weight: 700; }
 header.site nav a:hover { color: var(--blue); }
 .hero { text-align: center; padding: 28px 0 8px; }
@@ -73,3 +73,7 @@ footer.site {
   color: var(--muted); font-size: 15px; text-align: center;
 }
 footer.site a { color: var(--muted); margin: 0 8px; }
+header.site .brand { white-space: nowrap; }
+header.site .brand img { border-radius: 9px; }
+@media (max-width: 420px) { header.site nav a { margin-left: 12px; font-size: 16px; } header.site .brand { font-size: 18px; } }
+img.zquid { display: block; width: 200px; max-width: 60%; height: auto; margin: 0 auto 8px; border-radius: 22px; }
